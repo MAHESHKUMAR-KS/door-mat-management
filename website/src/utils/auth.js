@@ -1,5 +1,5 @@
 const SESSION_KEY = 'dm_session';
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_URL || '';
 const GOOGLE_REDIRECT_URI = import.meta.env.VITE_GOOGLE_REDIRECT_URI || '';
 const GOOGLE_STATE_KEY = 'dm_google_state';
 const GOOGLE_NONCE_KEY = 'dm_google_nonce';
@@ -38,7 +38,7 @@ export const registerUser = async ({ username, password }) => {
     }
     return { ok: false, message: data.message };
   } catch {
-    return { ok: false, message: 'Network error. Ensure backend is running on http://localhost:5000' };
+    return { ok: false, message: 'Network error. Please check your internet connection or if the backend server is running.' };
   }
 };
 
