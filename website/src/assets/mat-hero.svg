@@ -1,0 +1,36 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#efe5d8"/>
+      <stop offset="1" stop-color="#dfcfbb"/>
+    </linearGradient>
+    <pattern id="weaveA" x="0" y="0" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect width="56" height="56" fill="#d7c1a4"/>
+      <rect x="0" y="0" width="56" height="28" fill="#c8ae8d"/>
+      <rect x="0" y="14" width="56" height="14" fill="#b9956d" opacity="0.55"/>
+      <rect x="0" y="42" width="56" height="14" fill="#b9956d" opacity="0.45"/>
+      <rect x="14" y="0" width="14" height="56" fill="#b3875a" opacity="0.5"/>
+      <rect x="42" y="0" width="14" height="56" fill="#a9784a" opacity="0.35"/>
+    </pattern>
+    <pattern id="weaveB" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <rect width="28" height="28" fill="#b5895e" opacity="0.16"/>
+      <path d="M0 0L28 28M28 0L0 28" stroke="#7f5a35" stroke-opacity="0.18" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="200" y="80" width="1200" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#5f452a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="260" y="140" width="1080" height="620" rx="24" fill="#ccb090"/>
+    <rect x="280" y="160" width="1040" height="580" rx="18" fill="url(#weaveA)"/>
+    <rect x="280" y="160" width="1040" height="580" rx="18" fill="url(#weaveB)"/>
+    <rect x="280" y="160" width="1040" height="580" rx="18" stroke="#9c7248" stroke-width="6"/>
+    <rect x="300" y="180" width="1000" height="540" rx="10" stroke="#ead9c2" stroke-opacity="0.55" stroke-width="2"/>
+  </g>
+
+  <rect x="60" y="70" width="220" height="220" rx="18" fill="url(#weaveA)" opacity="0.65"/>
+  <rect x="1320" y="610" width="220" height="220" rx="18" fill="url(#weaveA)" opacity="0.65"/>
+</svg>

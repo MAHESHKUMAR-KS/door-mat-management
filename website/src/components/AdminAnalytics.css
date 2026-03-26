@@ -1,0 +1,158 @@
+.adminAnalytics__money {
+  font-size: 1.8rem;
+}
+
+.adminAnalytics__customerName {
+  font-size: 1.55rem;
+  line-height: 1.3;
+}
+
+.adminAnalytics__chartWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.adminAnalytics__chart {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(120px, 1fr));
+  gap: 1rem;
+  min-height: 280px;
+  padding: 0.5rem 0.25rem 0;
+}
+
+.adminAnalytics__barGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: stretch;
+}
+
+.adminAnalytics__barTrack {
+  height: 170px;
+  border-radius: 12px;
+  background: rgba(31, 42, 52, 0.08);
+  border: 1px solid rgba(31, 42, 52, 0.12);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.adminAnalytics__bar {
+  width: 100%;
+  background: linear-gradient(180deg, var(--color-link) 0%, var(--color-primary-hover) 100%);
+  border-radius: 10px 10px 0 0;
+  transition: height 0.25s ease;
+}
+
+.adminAnalytics__barMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: var(--color-ink-muted);
+  font-size: 0.85rem;
+}
+
+.adminAnalytics__barMeta strong {
+  color: var(--color-ink);
+  font-size: 0.92rem;
+}
+
+.adminAnalytics__barLabel {
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--color-ink-muted);
+}
+
+.adminAnalytics__tableWrap {
+  overflow-x: auto;
+  border: 1px solid rgba(31, 42, 52, 0.1);
+  border-radius: 12px;
+}
+
+.adminAnalytics__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.adminAnalytics__table th,
+.adminAnalytics__table td {
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid rgba(31, 42, 52, 0.08);
+}
+
+.adminAnalytics__table thead th {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: var(--color-ink-muted);
+  background: rgba(31, 42, 52, 0.04);
+}
+
+.adminAnalytics__empty {
+  border: 1px dashed rgba(31, 42, 52, 0.22);
+  border-radius: 12px;
+  padding: 1rem;
+  color: var(--color-ink-muted);
+}
+
+.adminAnalytics__askRow {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+
+.adminAnalytics__askRow input {
+  flex: 1;
+  min-width: 260px;
+}
+
+.adminAnalytics__sampleQuestions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+
+.adminAnalytics__sampleBtn {
+  background: rgba(13, 85, 85, 0.08);
+  color: var(--color-link);
+  border: 1px solid rgba(13, 85, 85, 0.25);
+  box-shadow: none;
+  padding: 0.5rem 0.75rem;
+}
+
+.adminAnalytics__sampleBtn:hover {
+  background: rgba(13, 85, 85, 0.16);
+  color: var(--color-link);
+  transform: none;
+}
+
+.adminAnalytics__answerBox {
+  border: 1px solid rgba(31, 42, 52, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.9rem 1rem;
+  color: var(--color-ink);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .adminAnalytics__money {
+    font-size: 1.5rem;
+  }
+
+  .adminAnalytics__customerName {
+    font-size: 1.3rem;
+  }
+
+  .adminAnalytics__chart {
+    grid-template-columns: repeat(6, minmax(110px, 1fr));
+  }
+
+  .adminAnalytics__askRow input {
+    min-width: 100%;
+  }
+}

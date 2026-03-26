@@ -1,0 +1,33 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#efe3d2"/>
+      <stop offset="1" stop-color="#ddc7ac"/>
+    </linearGradient>
+    <linearGradient id="matFill" x1="300" y1="170" x2="1300" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b68558"/>
+      <stop offset="1" stop-color="#8e6038"/>
+    </linearGradient>
+    <pattern id="weave" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#000" fill-opacity="0.08"/>
+      <path d="M0 0H32M0 16H32M16 0V32" stroke="#fff" stroke-opacity="0.12" stroke-width="1"/>
+      <path d="M0 8H32M8 0V32M24 0V32" stroke="#000" stroke-opacity="0.18" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="200" y="100" width="1200" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#5f3f23" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#floor)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="260" y="140" width="1080" height="620" rx="26" fill="#a87548"/>
+    <rect x="285" y="165" width="1030" height="570" rx="18" fill="url(#matFill)"/>
+    <rect x="285" y="165" width="1030" height="570" rx="18" fill="url(#weave)"/>
+    <rect x="285" y="165" width="1030" height="570" rx="18" stroke="#e5c8a5" stroke-opacity="0.55" stroke-width="2"/>
+    <rect x="315" y="195" width="970" height="510" rx="10" stroke="#f3dfc5" stroke-opacity="0.45" stroke-width="1.5"/>
+  </g>
+
+  <circle cx="1450" cy="140" r="90" fill="#f6e9d8" fill-opacity="0.45"/>
+  <circle cx="120" cy="760" r="120" fill="#c8a27c" fill-opacity="0.25"/>
+</svg>

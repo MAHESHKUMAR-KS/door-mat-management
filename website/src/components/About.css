@@ -1,0 +1,135 @@
+.aboutPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.aboutPage__main {
+  flex: 1;
+  padding: 3.2rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutHeader {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.82), rgba(241, 248, 244, 0.9));
+  border: 1px solid #cfddd7;
+  border-radius: 22px;
+  padding: 1.9rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.aboutTitle {
+  margin: 0;
+  font-size: clamp(2.2rem, 4.5vw, 3.3rem);
+  line-height: 1;
+  color: #182e41;
+}
+
+.aboutLead {
+  margin: 0;
+  color: #4c6377;
+  max-width: 760px;
+}
+
+.aboutSection {
+  background: linear-gradient(160deg, #ffffff, #f8fcfa);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #d3e1db;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.aboutSection__title {
+  margin: 0;
+  color: #154f45;
+  font-size: 1.35rem;
+  font-family: var(--font-ui);
+  letter-spacing: -0.01em;
+}
+
+.aboutSection p {
+  margin: 0;
+  color: #516a7d;
+  line-height: 1.7;
+}
+
+.aboutSplit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.aboutSplit h3 {
+  margin: 0 0 0.45rem;
+  color: #18485d;
+  font-size: 1.04rem;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.aboutCard {
+  background: linear-gradient(140deg, #ffffff, #f7fbf9);
+  border-radius: 18px;
+  padding: 1.55rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #d3e1db;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.aboutCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.aboutCard h2 {
+  margin: 0 0 0.45rem;
+  color: #154f45;
+  font-size: 1.12rem;
+  font-family: var(--font-ui);
+}
+
+.aboutCard p {
+  margin: 0;
+  color: #556d80;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .aboutPage__main {
+    padding: 2.2rem 1.5rem 3rem;
+  }
+
+  .aboutTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutPage__main {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .aboutTitle {
+    font-size: 1.6rem;
+  }
+
+  .aboutHeader,
+  .aboutSection,
+  .aboutCard {
+    padding: 1.2rem;
+  }
+}

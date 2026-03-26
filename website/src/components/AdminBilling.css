@@ -1,0 +1,739 @@
+.adminBilling__controls {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adminBilling__filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adminBilling__filterLabel {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.adminBilling__filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.adminBilling__filterBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.adminBilling__filterBtn:hover {
+  border-color: var(--color-link);
+  background: var(--color-primary-hover-light);
+}
+
+.adminBilling__filterBtn--active {
+  background: var(--color-link);
+  color: white;
+  border-color: var(--color-link);
+}
+
+.adminBilling__ordersSection {
+  margin-top: 2rem;
+}
+
+.adminBilling__ordersTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.adminBilling__emptyState {
+  padding: 2rem;
+  text-align: center;
+  background: var(--color-surface);
+  border-radius: 8px;
+  color: var(--color-text-secondary);
+}
+
+.adminBilling__ordersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  min-height: 400px;
+}
+
+.adminBilling__ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+.adminBilling__orderItem {
+  padding: 1rem;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.adminBilling__orderItem:hover {
+  border-color: var(--color-link);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adminBilling__orderItem--selected {
+  border-color: var(--color-link);
+  background: var(--color-primary-hover-light);
+}
+
+.adminBilling__orderItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.adminBilling__orderStatus {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.adminBilling__orderStatus--pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.adminBilling__orderStatus--processing {
+  background: #cfe2ff;
+  color: #084298;
+}
+
+.adminBilling__orderStatus--completed {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.adminBilling__orderStatus--cancelled {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.adminBilling__orderItemDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.adminBilling__orderItemDetails > div:first-child {
+  flex: 1;
+}
+
+.adminBilling__orderItemDetails p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.adminBilling__orderAmount {
+  font-weight: 600;
+  color: var(--color-link);
+  font-size: 1.1rem;
+}
+
+.adminBilling__orderDate {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.5rem;
+}
+
+.adminBilling__orderDetails {
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.adminBilling__detailsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.adminBilling__detailsSection {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.adminBilling__detailsSection:last-child {
+  border-bottom: none;
+}
+
+.adminBilling__detailsSubtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.adminBilling__detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.adminBilling__detailsGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.adminBilling__detailsGrid strong {
+  color: var(--color-text-secondary);
+}
+
+.adminBilling__addressText {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.adminBilling__itemsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: 0.9rem;
+}
+
+.adminBilling__tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--color-primary-hover-light);
+  font-weight: 600;
+  border-radius: 4px 4px 0 0;
+}
+
+.adminBilling__tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.adminBilling__tableRow:last-child {
+  border-bottom: none;
+}
+
+.adminBilling__size {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.adminBilling__statusButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.adminBilling__statusBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.adminBilling__statusBtn:hover {
+  border-color: var(--color-link);
+  background: var(--color-primary-hover-light);
+}
+
+.adminBilling__statusBtn--active {
+  background: var(--color-link);
+  color: white;
+  border-color: var(--color-link);
+}
+
+.adminBilling__lowStock {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fef5e7;
+  border: 2px solid #f39c12;
+  border-radius: 8px;
+}
+
+.adminBilling__lowStockTitle {
+  font-size: 1.1rem;
+  color: #d68910;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.adminBilling__lowStockGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.adminBilling__lowStockCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #e74c3c;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.adminBilling__lowStockName {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.adminBilling__lowStockQuantity {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.adminBilling__refillBtn {
+  padding: 0.5rem 1rem;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.adminBilling__refillBtn:hover {
+  background: #e67e22;
+}
+
+/* Manual Order Form */
+.adminBilling__addManualBtn {
+  padding: 0.6rem 1.2rem;
+  background: var(--color-link);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  margin-left: auto;
+}
+
+.adminBilling__addManualBtn:hover {
+  background: #0047ab;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.adminBilling__formContainer {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: var(--color-surface);
+  border: 2px solid var(--color-link);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.adminBilling__formTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.adminBilling__formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.adminBilling__formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.adminBilling__formGroup--full {
+  grid-column: 1 / -1;
+}
+
+.adminBilling__formLabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.adminBilling__formInput,
+.adminBilling__formSelect,
+.adminBilling__formTextarea {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: white;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.adminBilling__formInput:focus,
+.adminBilling__formSelect:focus,
+.adminBilling__formTextarea:focus {
+  outline: none;
+  border-color: var(--color-link);
+  box-shadow: 0 0 0 3px rgba(0, 91, 187, 0.1);
+}
+
+.adminBilling__formTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.adminBilling__sizeInputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.adminBilling__sizeInputWrapper .adminBilling__formInput {
+  flex: 1;
+}
+
+.adminBilling__sizeHint {
+  font-size: 0.75rem;
+  color: #d97706;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.adminBilling__itemsSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--color-primary-hover-light);
+  border-radius: 6px;
+}
+
+.adminBilling__itemsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.adminBilling__itemsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.adminBilling__itemsHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--color-primary-hover-light);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.adminBilling__itemHeaderCol {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.adminBilling__itemsRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.adminBilling__itemsRow:last-child {
+  border-bottom: none;
+}
+
+.adminBilling__itemCol {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.adminBilling__formSelect {
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: white;
+  width: 100%;
+}
+
+.adminBilling__priceDisplay {
+  font-weight: 600;
+  color: var(--color-link);
+  white-space: nowrap;
+}
+
+.adminBilling__totalDisplay {
+  font-weight: 600;
+  color: #27ae60;
+  white-space: nowrap;
+}
+
+.adminBilling__sizeNA {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.adminBilling__removeItemBtn {
+  padding: 0.5rem 0.75rem;
+  background: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.adminBilling__removeItemBtn:hover {
+  background: #f5c2c7;
+  border-color: #d0484b;
+}
+
+.adminBilling__orderTotalRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--color-primary-hover-light);
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.adminBilling__orderTotalLabel {
+  text-align: right;
+}
+
+.adminBilling__orderTotalValue {
+  color: #27ae60;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.adminBilling__addItemBtn {
+  padding: 0.6rem 1rem;
+  background: var(--color-link);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.adminBilling__addItemBtn:hover {
+  background: #0047ab;
+}
+
+.adminBilling__formActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.adminBilling__submitBtn {
+  padding: 0.75rem 2rem;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.adminBilling__submitBtn:hover {
+  background: #1e8449;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.adminBilling__cancelBtn {
+  padding: 0.75rem 2rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.adminBilling__cancelBtn:hover {
+  background: var(--color-border);
+  border-color: var(--color-text-secondary);
+}
+
+/* Scrollbar styling */
+.adminBilling__ordersList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.adminBilling__ordersList::-webkit-scrollbar-track {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.adminBilling__ordersList::-webkit-scrollbar-thumb {
+  background: var(--color-link);
+  border-radius: 4px;
+}
+
+.adminBilling__orderDetails::-webkit-scrollbar {
+  width: 8px;
+}
+
+.adminBilling__orderDetails::-webkit-scrollbar-track {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.adminBilling__orderDetails::-webkit-scrollbar-thumb {
+  background: var(--color-link);
+  border-radius: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .adminBilling__ordersContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__detailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__tableHeader,
+  .adminBilling__tableRow {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__filterGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .adminBilling__lowStockGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adminBilling__addManualBtn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .adminBilling__formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .adminBilling__itemRow {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .adminBilling__itemsHeader,
+  .adminBilling__itemsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__orderTotalRow {
+    grid-template-columns: 1fr;
+  }
+
+  .adminBilling__orderTotalLabel {
+    text-align: left;
+  }
+
+  .adminBilling__formActions {
+    flex-direction: column;
+  }
+
+  .adminBilling__submitBtn,
+  .adminBilling__cancelBtn {
+    width: 100%;
+  }
+}

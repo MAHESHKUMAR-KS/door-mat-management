@@ -1,0 +1,138 @@
+.siteNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(251, 249, 245, 0.97);
+  color: var(--color-ink);
+  box-shadow: 0 6px 20px rgba(45, 47, 42, 0.07);
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  min-height: var(--nav-height);
+  padding: 0.85rem 2.6rem;
+  gap: 0.8rem 1.2rem;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e6ded0;
+}
+
+.siteNav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.72rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #252a2f;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  font-family: var(--font-display);
+}
+
+.siteNav__logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #d7d9d6;
+  box-shadow: 0 5px 14px rgba(33, 38, 41, 0.1);
+}
+
+.siteNav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.siteNav__link {
+  text-decoration: none;
+  color: #4f575c;
+  padding: 0.54rem 0.92rem;
+  border-radius: 999px;
+  transition: background-color 0.22s ease, color 0.22s ease, transform 0.15s ease;
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-size: 0.98rem;
+}
+
+.siteNav__link:hover {
+  background: rgba(90, 99, 103, 0.11);
+  color: #1f2a30;
+  transform: translateY(-1px);
+}
+
+.siteNav__link--login {
+  background: #f4f2ed;
+  border: 1.5px solid #c6cec4;
+  color: #32454a;
+}
+
+.siteNav__link--register {
+  background: linear-gradient(120deg, #117064, #0f5d53);
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.siteNav__link--register:hover {
+  background: linear-gradient(120deg, #0e5f55, #0d5148);
+  color: #ffffff;
+}
+
+.siteNav__link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(21, 107, 92, 0.24);
+}
+
+@media (max-width: 900px) {
+  .siteNav {
+    padding: 0.75rem 1.1rem;
+  }
+
+  .siteNav__brand {
+    font-size: 1.45rem;
+  }
+
+  .siteNav__link {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .siteNav {
+    padding: 0.72rem 0.95rem;
+    gap: 0.8rem;
+  }
+
+  .siteNav__brand {
+    font-size: 1.18rem;
+    font-weight: 600;
+  }
+
+  .siteNav__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .siteNav__links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .siteNav__link {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .siteNav__authBtn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

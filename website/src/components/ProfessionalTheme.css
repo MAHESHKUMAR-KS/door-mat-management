@@ -1,0 +1,432 @@
+.homePage,
+.aboutPage,
+.contactPage,
+.authPage,
+.productShowcase,
+.wishlistPage,
+.userProfile,
+.userDash,
+.enquiryAdmin,
+.productModule,
+.adminDash {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.authCard,
+.aboutSection,
+.aboutCard,
+.contactPage__card,
+.contactPage__form,
+.wishlistPage__header,
+.wishlistPage__card,
+.userProfile__header,
+.userProfile__card,
+.userDash__card,
+.productShowcase__controls,
+.productShowcase__card,
+.productModule__summary,
+.productModule__panel,
+.productModule__form,
+.enquiryAdmin__summary,
+.enquiryAdmin__table,
+.orders__section,
+.orders__orderCard,
+.orders__placeOrder,
+.adminDash__card,
+.adminDash__panel,
+.adminBilling__controls,
+.adminBilling__ordersList,
+.adminBilling__orderDetails,
+.adminBilling__formContainer,
+.adminBilling__lowStockCard,
+.adminBilling__emptyState,
+.adminAnalytics__answerBox {
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-lg);
+}
+
+.homeCard:hover,
+.wishlistPage__card:hover,
+.productShowcase__card:hover,
+.orders__orderCard:hover,
+.adminDash__card:hover,
+.adminDash__panel:hover,
+.productModule__panel:hover,
+.aboutCard:hover,
+.contactPage__card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.adminDash__badge,
+.productModule__fileLabel,
+.orders__status--shipped,
+.adminOrders__filterBtn--active,
+.authToggleBtn--active {
+  background: rgba(var(--color-primary-rgb), 0.12);
+  border-color: rgba(var(--color-primary-rgb), 0.28);
+  color: var(--color-link);
+}
+
+.authToggleBtn--active,
+.productModule__fileLabel,
+.adminOrders__filterBtn--active,
+.productShowcase__download,
+.enquiryAdmin__summary button,
+.productModule__backBtn {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+.productShowcase__download:hover,
+.enquiryAdmin__summary button:hover,
+.productModule__backBtn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.orders__delivery,
+.orders__cartPreview,
+.orders__orderItems,
+.orders__orderAddress,
+.wishlistPage__empty,
+.enquiryAdmin__table th,
+.enquiryAdmin__table tbody tr:hover,
+.adminAnalytics__barTrack,
+.adminAnalytics__table thead th,
+.adminDash__modalTable th,
+.adminDash__modalTable tbody tr:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.06);
+}
+
+.orders__delivery,
+.orders__cartPreview,
+.orders__orderItems,
+.orders__orderAddress,
+.wishlistPage__empty,
+.adminAnalytics__tableWrap,
+.adminAnalytics__empty,
+.adminDash__modalTable,
+.enquiryAdmin__table,
+.productModule__summary,
+.productModule__form,
+.productModule__panel,
+.userProfile__card,
+.productShowcase__card,
+.contactPage__map,
+.contactPage__form,
+.aboutSection,
+.aboutCard,
+.homeCard,
+.wishlistPage__card {
+  border-color: var(--color-border);
+}
+
+.orders__section {
+  background: linear-gradient(180deg, var(--color-surface) 0%, rgba(var(--color-primary-rgb), 0.03) 100%);
+}
+
+.orders__section:hover,
+.orders__item:hover,
+.orders__orderCard:hover {
+  border-color: rgba(var(--color-primary-rgb), 0.28);
+}
+
+.orders__kpiCard {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(var(--color-primary-rgb), 0.04) 100%);
+  border-color: var(--color-border);
+}
+
+.orders__qtyInput:focus {
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+}
+
+.orders__btn {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+}
+
+.orders__status--shipped {
+  background: rgba(var(--color-primary-rgb), 0.14);
+  border-color: rgba(var(--color-primary-rgb), 0.34);
+}
+
+.siteFooter__iconBtn.mail,
+.siteFooter__iconBtn.ig,
+.siteFooter__iconBtn.map {
+  background: rgba(var(--color-primary-rgb), 0.3);
+}
+
+.productModule {
+  background: linear-gradient(180deg, rgba(var(--color-primary-rgb), 0.03) 0%, var(--color-bg) 100%);
+}
+
+.adminAnalytics__sampleBtn {
+  background: rgba(var(--color-primary-rgb), 0.08);
+  border-color: rgba(var(--color-primary-rgb), 0.25);
+  color: var(--color-link);
+}
+
+.adminAnalytics__sampleBtn:hover {
+  background: rgba(var(--color-primary-rgb), 0.16);
+}
+
+.adminBilling__orderItem,
+.adminBilling__orderItem--selected,
+.adminAnalytics__sampleBtn,
+.adminDash__toolMessage,
+.orders__kpiCard {
+  border-color: rgba(var(--color-primary-rgb), 0.26);
+}
+
+.productShowcase__eyebrow,
+.userDash__eyebrow,
+.wishlistPage__eyebrow,
+.userProfile__eyebrow,
+.enquiryAdmin__eyebrow,
+.productModule__eyebrow {
+  color: var(--color-link);
+  background: rgba(var(--color-primary-rgb), 0.1);
+  border-radius: 999px;
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.35rem 0.8rem;
+}
+
+.adminBilling__orderStatus--pending {
+  background: rgba(217, 119, 6, 0.14);
+  color: var(--color-warning);
+}
+
+.adminBilling__orderStatus--processing {
+  background: rgba(var(--color-primary-rgb), 0.14);
+  color: var(--color-link);
+}
+
+.adminBilling__orderStatus--completed {
+  background: rgba(4, 120, 87, 0.14);
+  color: var(--color-success);
+}
+
+.adminBilling__orderStatus--cancelled {
+  background: rgba(220, 38, 38, 0.12);
+  color: var(--color-error);
+}
+
+/* Unified professional skin across all routes */
+:is(
+  .aboutPage,
+  .contactPage,
+  .authPage,
+  .productShowcase,
+  .productDetails,
+  .wishlistPage,
+  .userProfile,
+  .userDash,
+  .orders,
+  .productModule,
+  .adminDash,
+  .enquiryAdmin
+) {
+  background: linear-gradient(145deg, #f3ede2 0%, #efeadf 56%, #f8f5ef 100%);
+}
+
+:is(
+  .aboutPage__main,
+  .contactPage__main,
+  .authPage__main,
+  .productShowcase__main,
+  .productDetails__main,
+  .wishlistPage__main,
+  .userProfile__main,
+  .userDash__main,
+  .orders__main,
+  .productModule__main,
+  .adminDash__main,
+  .enquiryAdmin__main
+) {
+  padding-top: 0;
+  padding-bottom: 3.2rem;
+}
+
+:is(
+  .aboutPage,
+  .contactPage,
+  .authPage,
+  .productShowcase,
+  .productDetails,
+  .wishlistPage,
+  .userProfile,
+  .userDash,
+  .orders,
+  .productModule,
+  .adminDash,
+  .enquiryAdmin
+) :is([class*='__card'], [class*='__panel'], [class*='__section'], [class*='__header']) {
+  border-radius: 18px;
+  border-color: #ddd4c8;
+  box-shadow: 0 10px 30px rgba(25, 30, 36, 0.07);
+}
+
+:is(
+  .aboutPage,
+  .contactPage,
+  .authPage,
+  .productShowcase,
+  .productDetails,
+  .wishlistPage,
+  .userProfile,
+  .userDash,
+  .orders,
+  .productModule,
+  .adminDash,
+  .enquiryAdmin
+) :is([class*='__card'], [class*='__panel']):hover {
+  box-shadow: 0 16px 34px rgba(20, 28, 36, 0.1);
+}
+
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) h1 {
+  color: #1d2429;
+  letter-spacing: -0.02em;
+}
+
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) h2,
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) h3 {
+  color: #27323a;
+}
+
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) p,
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) [class*='__lead'],
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) [class*='__subtitle'],
+:is(.aboutPage, .contactPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) [class*='__hint'] {
+  color: #586369;
+}
+
+:is(.aboutPage, .contactPage, .authPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) :is(input, select, textarea) {
+  border: 1px solid #d3d6d4;
+  border-radius: 12px;
+  background: #fbfaf7;
+}
+
+:is(.aboutPage, .contactPage, .authPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) :is(input, select, textarea):focus {
+  border-color: #0f6b61;
+  box-shadow: 0 0 0 3px rgba(15, 107, 97, 0.14);
+}
+
+:is(.aboutPage, .contactPage, .authPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) :is(button, [class*='__btn'], [class*='__Button']) {
+  border-radius: 12px;
+}
+
+:is(.aboutPage, .contactPage, .authPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) :is(table, [class*='__table']) {
+  border-color: #d8d2c6;
+}
+
+:is(.aboutPage, .contactPage, .authPage, .productShowcase, .productDetails, .wishlistPage, .userProfile, .userDash, .orders, .productModule, .adminDash, .enquiryAdmin) :is(thead, [class*='__tableHeader']) {
+  background: #f2ede3;
+}
+
+.authCard {
+  background: linear-gradient(150deg, #ffffff 0%, #f6f3ed 100%);
+  border-radius: 22px;
+  border: 1px solid #d8d2c7;
+  box-shadow: 0 16px 34px rgba(22, 28, 34, 0.1);
+}
+
+.authGoogleButton {
+  border-color: #d4d8d4;
+  background: #fdfdfa;
+}
+
+.authGoogleButton:hover {
+  background: #f6f6f3;
+}
+
+.contactPage__header,
+.aboutPage__header,
+.productShowcase__header,
+.userDash__header,
+.userProfile__header,
+.wishlistPage__header {
+  background: linear-gradient(115deg, rgba(246, 234, 218, 0.88), rgba(227, 233, 222, 0.88));
+  border: 1px solid #ddd2c2;
+  border-radius: 24px;
+  padding: clamp(1.2rem, 2vw, 1.7rem);
+}
+
+.productShowcase__controls,
+.orders__section,
+.orders__placeOrder,
+.productModule__summary,
+.productModule__form,
+.productModule__panel,
+.adminDash__panel,
+.adminDash__card,
+.adminBilling__ordersList,
+.adminBilling__orderDetails,
+.adminBilling__formContainer,
+.adminAnalytics__answerBox,
+.enquiryAdmin__table,
+.contactPage__card,
+.contactPage__form,
+.contactPage__map,
+.aboutSection,
+.aboutCard,
+.wishlistPage__card,
+.userProfile__card,
+.userDash__card,
+.productShowcase__card,
+.productDetails__summary,
+.productDetails__gallery {
+  background: #fcfbf8;
+  border: 1px solid #dfd7cc;
+}
+
+.productShowcase__imageWrap,
+.productDetails__imageWrap,
+.wishlistPage__imgWrap {
+  background: linear-gradient(145deg, #f2eee5, #e8ebdf);
+}
+
+.adminDash {
+  background: linear-gradient(140deg, #efe8dc 0%, #ece8df 45%, #f5f2ea 100%);
+}
+
+.adminDash__sidebar {
+  background: linear-gradient(180deg, #143f3d 0%, #102f2f 100%);
+  border-right: 1px solid rgba(234, 244, 239, 0.1);
+}
+
+.adminDash__navBtn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.adminDash__navBtn--active,
+.adminDash__navBtn:hover {
+  background: rgba(240, 249, 244, 0.18);
+  border-color: rgba(240, 249, 244, 0.34);
+}
+
+.siteFooter {
+  background: linear-gradient(160deg, #153a38 0%, #102d2c 100%);
+}
+
+@media (max-width: 900px) {
+  :is(
+    .aboutPage__main,
+    .contactPage__main,
+    .authPage__main,
+    .productShowcase__main,
+    .productDetails__main,
+    .wishlistPage__main,
+    .userProfile__main,
+    .userDash__main,
+    .orders__main,
+    .productModule__main,
+    .adminDash__main,
+    .enquiryAdmin__main
+  ) {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+  }
+}
