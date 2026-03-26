@@ -1,5 +1,5 @@
 const SESSION_KEY = 'dm_session';
-const API_BASE = import.meta.env.VITE_API_URL || '';
+const API_BASE = import.meta.env.VITE_API_URL;
 const GOOGLE_REDIRECT_URI = import.meta.env.VITE_GOOGLE_REDIRECT_URI || '';
 const GOOGLE_STATE_KEY = 'dm_google_state';
 const GOOGLE_NONCE_KEY = 'dm_google_nonce';

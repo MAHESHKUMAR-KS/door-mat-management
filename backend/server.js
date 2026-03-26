@@ -20,7 +20,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 const googleClientId = process.env.GOOGLE_CLIENT_ID || '';
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET || '';
-const googleRedirectUri = process.env.GOOGLE_REDIRECT_URI || 'http://localhost:5000/api/google/callback';
+const googleRedirectUri = process.env.GOOGLE_REDIRECT_URI;
 const jwtSecret = process.env.JWT_SECRET || 'change-me-in-production';
 const googleAuthConfigured = Boolean(googleClientId && googleClientSecret && googleRedirectUri);
 const googleClient = googleClientId
@@ -43,7 +43,11 @@ const razorpay = hasRealGatewayConfig
   : null;
 
 // MongoDB Connection
-const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/doormats';
+const mongoUri = process.env.MONGODB_URI;
+if (!mongoUri) {
+  console.error("❌ ERROR: MONGODB_URI is not defined in environment variables!");
+  process.exit(1);
+}
 
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
