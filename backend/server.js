@@ -47,11 +47,11 @@ mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('✅ MongoDB connected successfully'))
-.catch((err) => {
-  console.error('❌ MongoDB connection error:', err.message);
-  process.exit(1);
-});
+  .then(() => console.log('✅ MongoDB connected successfully'))
+  .catch((err) => {
+    console.error('❌ MongoDB connection error:', err.message);
+    process.exit(1);
+  });
 
 // User Schema
 const userSchema = new mongoose.Schema({
